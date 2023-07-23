@@ -1,21 +1,12 @@
 import ReactDOM from 'react-dom/client';
-import Home from './pages/Home';
-import About from './pages/About';
-import Skills from './pages/Skills';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import Navigation from './components/Navigation';
-import './styles/reset.css';
+import Page from './global/Page';
+// import Navigation from './global/Navigation';
+// import './styles/reset.css';
+
+// <Navigation />
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <>
-        <main>
-            <Home />
-            <About />
-            <Skills />
-            <Projects />
-            <Contact />
-        </main>
-        <Navigation />
+        <Page />
     </>
 );
