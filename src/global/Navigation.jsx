@@ -2,10 +2,14 @@ const links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
 
 const Navigation = () => {
     return (
-        <nav role='menubar'>
+        <nav>
+            <ul>
             {links.map(link => (
-                <a role='menuitem' href={'#' + link.toLowerCase()} key={link}>{link}</a>
+                <li key={link}>
+                    <a href={'#' + link.toLowerCase()}>{link}</a>
+                </li>
             ))}
+            </ul>
         </nav>
     )
 };
