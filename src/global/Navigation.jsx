@@ -2,9 +2,9 @@ const links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
 
 const Navigation = () => {
     return (
-        <nav>
+        <nav role='menubar'>
             {links.map(link => (
-                <a href={'#' + link.toLowerCase()} key={link}>{link}</a>
+                <a role='menuitem' href={'#' + link.toLowerCase()} key={link}>{link}</a>
             ))}
         </nav>
     )
