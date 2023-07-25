@@ -7,15 +7,15 @@ const projects = [
         details: [
             {
                 title: 'Description',
-                content: '...'
+                content: 'Ecommerce frontend built with React, React Router, and Fakestore API. Bootstrapped from a custom React environment using Webpack.'
             },
             {
                 title: 'Technologies',
-                content: '...'
+                content: 'React, React Router, REST API, Webpack'
             },
             {
                 title: 'Year',
-                content: '...'
+                content: '2023'
             }
         ],
         media: {
@@ -38,15 +38,15 @@ const projects = [
         details: [
             {
                 title: 'Description',
-                content: '...'
+                content: 'Simple webpage showcasing under-the-hood concepts linked lists, tree navigation, and tree sorting. Built with React. Bootstrapped from a custom React environment using Webpack.'
             },
             {
                 title: 'Technologies',
-                content: '...'
+                content: 'Linked lists, tree navigation/sorting, React, Webpack'
             },
             {
                 title: 'Year',
-                content: '...'
+                content: '2023'
             }
         ],
         media: {
