@@ -1,7 +1,7 @@
 const Home = () => {
     return (
-        <section id='home'>
-            <h1>Hello, I'm <span className='pink'>Shannon</span>.</h1>
+        <section aria-label='home' id='home'>
+            <p>Hello, I'm <span className='pink'>Shannon</span>.</p>
             <p>I'm a fullstack web developer</p>
         </section>
     )

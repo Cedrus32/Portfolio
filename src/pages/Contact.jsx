@@ -2,8 +2,7 @@ import icons from '../lib/contactData';
 
 const Contact = () => {
     return (
-        <section id='contact'>
-            <h2>Contact</h2>
+        <section aria-label='contact' id='contact'>
             <p>Want to get in touch?</p>
             <div>
                 {icons.map(icon => (
