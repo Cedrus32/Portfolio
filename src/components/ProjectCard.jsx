@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 
 const ProjectCard = (props) => {
     const { project } = props;
-    console.log(project);
 
     return (
         <article aria-label={project.title}>
