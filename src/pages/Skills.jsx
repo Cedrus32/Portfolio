@@ -4,7 +4,10 @@ const Skills = () => {
     return (
         <section aria-label='skills' id='skills'>
             {icons.map(icon => (
-                <img src={icon.path} alt={icon.name} key={icon.id} />
+                <figure key={icon.id}>
+                    <img src={icon.path} alt='' />
+                    <figcaption>{icon.name}</figcaption>
+                </figure>
             ))}
         </section>
     )
