@@ -35,6 +35,20 @@ a:active,
     color: var(--accent);
 }
 
+.project-links a {
+    background-color: var(--accent);
+    color: var(--dark);
+}
+
+article,
+.project-links a {
+    border-radius: var(--gap);
+}
+
+nav {
+    border-bottom: 2px solid var(--dark);
+}
+
 li {
     list-style-type: none;
 }
@@ -91,11 +105,12 @@ section {
     align-items: start;
     height: 100vh;
     min-height: max-content; /* FIX: min-height receeds past content */
-    padding-top: calc(var(--nav-height) + var(--3-gap));
+    padding-top: var(--nav-height);
 }
 
 #projects {
     justify-content: start;
+    padding-top: calc(var(--nav-height) + var(--6-gap));
 }
 
 article {
@@ -136,11 +151,12 @@ figcaption {
 
 /* spacing */
 
-#project {
+#projects {
     row-gap: var(--6-gap);
 }
 
-#home {
+#home,
+#contact {
     gap: var(--3-gap);
 }
 
@@ -149,16 +165,20 @@ figcaption {
     gap: var(--2-gap);
 }
 
+article {
+    padding: var(--half-gap);
+    gap: var(--half-gap);
+}
+
+.project-links a {
+    padding: var(--half-gap) var(--3-gap);
+}
+
 #skills,
 .contact-links,
 .project-links {
     gap: var(--gap);
 }
-
-article {
-    gap: var(--half-gap);
-}
-
 
 /* sizing */
 
