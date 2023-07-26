@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <section aria-label='contact' id='contact'>
             <p>Want to get in touch?</p>
-            <div>
+            <div className='contact-links'>
                 {icons.map(icon => (
                     <a href={icon.url} key={icon.id}>
                         <img src={icon.path} alt='' />

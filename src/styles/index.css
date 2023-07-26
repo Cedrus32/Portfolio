@@ -40,8 +40,14 @@ main {
 
 section,
 nav,
-ul {
+ul,
+.contact-links {
     display: flex;
+}
+
+.contact-links,
+#skills {
+    flex-flow: row wrap;
 }
 
 section,
@@ -65,9 +71,12 @@ section {
 }
 
 #skills {
-    flex-flow: row wrap;
     align-content: center;
     gap: var(--gap);
+}
+
+#contact {
+    align-items: center;
 }
 
 figcaption {
@@ -95,6 +104,20 @@ article {
     grid-template-rows: repeat(4, auto);
     gap: calc(var(--gap) * 1.5);
     width: 100%;
+}
+
+.contact-links {
+    justify-content: center;
+    gap: var(--gap);
+}
+
+.contact-links img {
+    display: block;
+}
+
+.contact-links img,
+.contact-links span {
+    margin: 0 auto;
 }
 
 /* sizing */
