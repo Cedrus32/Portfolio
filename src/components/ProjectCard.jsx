@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
         <article aria-label={project.title}>
             <span className='title' aria-hidden='true'>{project.title}</span>
             <img src={project.media.img} alt={project.title} />
-            <div className='links'>
+            <div className='project-links'>
                 {project.media.links.map(link => (
                     <a href={link.url} key={project.id + '-' + link.content}>{link.content}</a>
                 ))}
