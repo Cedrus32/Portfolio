@@ -36,11 +36,6 @@ const icons = [
     },
     {
         id: 7,
-        name: 'Vitest',
-        path: '../assets/vitest.svg'
-    },
-    {
-        id: 8,
         name: 'Git',
         path: '../assets/git.svg'
     },
