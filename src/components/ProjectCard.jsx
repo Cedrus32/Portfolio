@@ -5,7 +5,7 @@ const ProjectCard = (props) => {
 
     return (
         <article aria-label={project.title}>
-            <span className='title' aria-hidden='true'>{project.title}</span>
+            <span className='project-title' aria-hidden='true'>{project.title}</span>
             <img src={project.media.img} alt={project.title} />
             <div className='project-links'>
                 {project.media.links.map(link => (

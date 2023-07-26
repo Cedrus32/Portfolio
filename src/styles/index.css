@@ -10,6 +10,35 @@
     --2-gap: calc(var(--gap) * 2);
     --3-gap: calc(var(--gap) * 3);
     --6-gap: calc(var(--gap) * 6);
+    --reg: 20pt;
+    --xsmall: calc(var(--reg) * 0.75);
+    --small: calc(var(--reg) * 0.85);
+    --large: calc(var(--reg) * 1.25);
+    --xlarge: calc(var(--reg) * 2.5);
+}
+
+/* typo */
+
+body  {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: var(--reg);
+}
+
+.intro {
+    font-size: var(--xlarge);
+}
+
+.project-title {
+    font-size: var(--large);
+}
+
+.project-links a,
+.details span {
+    font-size: var(--small);
+}
+
+.details p {
+    font-size: var(--xsmall);
 }
 
 /* colors & decorations */
@@ -27,6 +56,15 @@ article {
     background-color: var(--medium);
 }
 
+nav {
+    border-bottom: 2px solid var(--dark);
+}
+
+article,
+.project-links a {
+    border-radius: var(--gap);
+}
+
 a:hover,
 a:active,
 .selected,
@@ -40,13 +78,8 @@ a:active,
     color: var(--dark);
 }
 
-article,
-.project-links a {
-    border-radius: var(--gap);
-}
-
-nav {
-    border-bottom: 2px solid var(--dark);
+.intro span {
+    color: var(--accent);
 }
 
 li {
