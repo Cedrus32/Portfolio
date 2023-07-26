@@ -140,28 +140,18 @@ figcaption {
     row-gap: var(--6-gap);
 }
 
-article {
-    padding: var(--half-gap);
-}
-
-.details {
-    gap: var(--2-gap);
-}
-
-.project-links {
-    gap: var(--gap);
-}
-
 #home {
     gap: var(--3-gap);
 }
 
-#about {
+#about,
+.details {
     gap: var(--2-gap);
 }
 
 #skills,
-.contact-links {
+.contact-links,
+.project-links {
     gap: var(--gap);
 }
 
