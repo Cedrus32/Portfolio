@@ -24,7 +24,9 @@ article {
 
 a:hover,
 a:active,
-.selected {
+.selected,
+.contact-links a:hover span,
+.contact-links a:active span {
     color: var(--accent);
 }
 
