@@ -118,10 +118,11 @@ ul {
 }
 
 nav {
-    position: fixed;
+    /* position: fixed; */
+    position: sticky;
     top: 0;
-    left: 0;
-    z-index: 1;
+    /* left: 0; */
+    /* z-index: 1; */
     min-height: var(--nav-height);
     width: 100vw;
     padding: var(--3-gap);
@@ -139,7 +140,8 @@ section {
     justify-content: center;
     align-items: start;
     min-height: 100vh;
-    padding-top: var(--nav-height);
+    margin-top: var(--nav-height);
+    /* padding-top: var(--nav-height); */
 }
 
 #projects {
