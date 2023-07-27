@@ -4,7 +4,7 @@
     --medium: #151515;
     --light: #ABA6AB;
     --accent: #ED3976;
-    --nav-height: 10vh;
+    --nav-height: 12vh;
     --gap: 0.5rem;
     --half-gap: calc(var(--gap) * 1.5);
     --2-gap: calc(var(--gap) * 2);
@@ -88,10 +88,6 @@ li {
 
 /* display */
 
-main {
-    padding: 0 var(--3-gap);
-}
-
 section,
 nav,
 ul,
@@ -111,6 +107,10 @@ article {
 
 /* layout */
 
+main {
+    padding: 0 var(--3-gap);
+}
+
 section,
 ul {
     width: 80vw;
@@ -118,11 +118,10 @@ ul {
 }
 
 nav {
-    /* position: fixed; */
-    position: sticky;
+    position: fixed;
     top: 0;
-    /* left: 0; */
-    /* z-index: 1; */
+    left: 0;
+    z-index: 1;
     min-height: var(--nav-height);
     width: 100vw;
     padding: var(--3-gap);
@@ -140,13 +139,14 @@ section {
     justify-content: center;
     align-items: start;
     min-height: 100vh;
-    margin-top: var(--nav-height);
-    /* padding-top: var(--nav-height); */
+    padding-top: calc(var(--nav-height) + var(--3-gap));
+    margin-bottom: var(--3-gap);
 }
 
 #projects {
     justify-content: start;
     padding-top: calc(var(--nav-height) + var(--6-gap));
+    margin-bottom: var(--6-gap);
 }
 
 article {
