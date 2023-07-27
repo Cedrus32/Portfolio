@@ -123,7 +123,6 @@ nav {
     left: 0;
     z-index: 1;
     min-height: var(--nav-height);
-    height: auto;
     width: 100vw;
     padding: var(--3-gap);
     align-items: center;
@@ -139,8 +138,7 @@ section {
     flex-flow: column;
     justify-content: center;
     align-items: start;
-    height: 100vh;
-    min-height: max-content; /* FIX: min-height receeds past content */
+    min-height: 100vh;
     padding-top: var(--nav-height);
 }
 
