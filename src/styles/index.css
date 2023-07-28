@@ -4,7 +4,8 @@
     --medium: #151515;
     --light: #ABA6AB;
     --accent: #ED3976;
-    --nav-height: 12vh;
+    --short-nav: 12vh;
+    --long-nav: 17vh;
     --gap: 0.5rem;
     --half-gap: calc(var(--gap) * 1.5);
     --2-gap: calc(var(--gap) * 2);
@@ -14,7 +15,7 @@
     --xsmall: calc(var(--reg) * 0.75);
     --small: calc(var(--reg) * 0.85);
     --large: calc(var(--reg) * 1.25);
-    --xlarge: calc(var(--reg) * 2.5);
+    --xlarge: calc(var(--reg) * 2.25);
 }
 
 /* typo */
@@ -122,7 +123,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 1;
-    min-height: var(--nav-height);
+    min-height: var(--short-nav);
     width: 100vw;
     padding: var(--3-gap);
     align-items: center;
@@ -139,13 +140,15 @@ section {
     justify-content: center;
     align-items: start;
     min-height: 100vh;
-    padding-top: calc(var(--nav-height) + var(--3-gap));
+    padding-top: calc(var(--long-nav) + var(--3-gap));
+    padding-bottom: calc(var(--long-nav) - var(--3-gap));
     margin-bottom: var(--3-gap);
 }
 
 #projects {
     justify-content: start;
-    padding-top: calc(var(--nav-height) + var(--6-gap));
+    padding-top: calc(var(--long-nav) + var(--6-gap));
+    padding-bottom: var(--6-gap);
     margin-bottom: var(--6-gap);
 }
 
@@ -197,6 +200,8 @@ figcaption {
 }
 
 #about,
+#skills,
+.contact-links,
 .details {
     gap: var(--2-gap);
 }
@@ -211,8 +216,6 @@ article {
 }
 
 ul,
-#skills,
-.contact-links,
 .project-links {
     gap: var(--gap);
 }
