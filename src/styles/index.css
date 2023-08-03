@@ -68,7 +68,7 @@ article,
 
 a:hover,
 a:active,
-.selected,
+.active,
 .contact-links a:hover span,
 .contact-links a:active span {
     color: var(--accent);
