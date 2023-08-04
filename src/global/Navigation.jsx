@@ -29,15 +29,17 @@ const Navigation = () => {
 
     function updateNavStyle(targetId) {
         anchorRefs.current.forEach(anchor => {
-            if (anchor.classList.contains('active') || anchor.href.includes(targetId)) {
-                anchor.classList.toggle('active');
-                anchor.parentElement.classList.toggle('bounce');
-            }
             if (anchor.classList.contains('active')){
                 anchor.ariaSelected = false;
+                anchor.ariaCurrent = '';
             }
             if (anchor.href.includes(targetId)) {
                 anchor.ariaSelected = true;
+                anchor.ariaCurrent = 'page';
+            }
+            if (anchor.classList.contains('active') || anchor.href.includes(targetId)) {
+                anchor.classList.toggle('active');
+                anchor.parentElement.classList.toggle('bounce');
             }
         });
     }
@@ -87,7 +89,7 @@ const Navigation = () => {
             <ul>
             {links.map(link => (
                 <li key={link}>
-                    <a href={'#' + link.toLowerCase()} aria-selected={false} onClick={showSection}>{link}</a>
+                    <a href={'#' + link.toLowerCase()} aria-selected={false} aria-current='' onClick={showSection}>{link}</a>
                 </li>
             ))}
             </ul>
