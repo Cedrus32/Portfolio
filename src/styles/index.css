@@ -18,6 +18,20 @@
     --xlarge: calc(var(--reg) * 2.25);
 }
 
+/* animations */
+.bounce {
+    animation: 1s ease-in 1 bounce;
+}
+@keyframes bounce {
+    10% { transform:translateY(0%); }
+    20% { transform:translateY(-20%); }
+    30% { transform:translateY(0%); }
+    35% { transform:translateY(-10%); }
+    40% { transform:translateY(0%); }
+    45% { transform:translateY(-5%); }
+    50% { transform:translateY(0); }
+}
+
 /* typo */
 
 body  {

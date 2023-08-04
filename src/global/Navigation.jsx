@@ -32,10 +32,12 @@ const Navigation = () => {
             if (anchor.classList.contains('active')) {
                 anchor.classList.remove('active');
                 anchor.ariaSelected = false;
+                anchor.parentElement.classList.remove('bounce');
             }
             if (anchor.href.includes(targetId)) {
                 anchor.classList.add('active');
                 anchor.ariaSelected = true;
+                anchor.parentElement.classList.add('bounce');
             }
         });
     }
