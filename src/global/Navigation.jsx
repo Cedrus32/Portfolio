@@ -7,14 +7,7 @@ const options = {
     threshold: 0,
 }
 
-// DONE: on path change (effect), get current window location, handle scroll & styling
-// DONE: intersection observer
-// DONE: fix navlink default active status
-// BUG: Clicked styling not removed on scrolling intersection
-
 const Navigation = () => {
-    console.log('render: Navigation'); // TEST: log when component renders
-
     const sectionRefs = useRef([]);
     const anchorRefs = useRef([]);
 
@@ -44,12 +37,7 @@ const Navigation = () => {
         });
     }
 
-    useEffect(() => { // TEST:
-        console.log('mount: Navigation');
-    }, []);
-
     useEffect(() => {
-        // console.log('cache section nodes as refs');
         let nodes = document.querySelectorAll('section');
         sectionRefs.current = [...nodes];
         nodes = document.querySelectorAll('nav a');
@@ -59,21 +47,18 @@ const Navigation = () => {
     useEffect(() => {
         function handleIntersection(e) {
             e.forEach(event => {
-                console.log(event);
                 if (event.isIntersecting) {
                     updateNavStyle(event.target.id);
                 }
             });
         }
 
-        // console.log('add intersection observer to root and sections');
         const observer = new IntersectionObserver(handleIntersection, options);
         sectionRefs.current.forEach(section => {
             observer.observe(section);
         });
 
         return () => {
-            // console.log('remove intersection observer from root and sections');
             sectionRefs.current.forEach(section => {
                 observer.unobserve(section);
             });
