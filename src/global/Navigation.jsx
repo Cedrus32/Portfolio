@@ -9,8 +9,8 @@ const options = {
 
 // DONE: on path change (effect), get current window location, handle scroll & styling
 // DONE: intersection observer
-// TODO: fix navlink default active status
-// TODO: re-check useLocation and re-render numbers
+// DONE: fix navlink default active status
+// BUG: Clicked styling not removed on scrolling intersection
 
 const Navigation = () => {
     console.log('render: Navigation'); // TEST: log when component renders
@@ -29,18 +29,22 @@ const Navigation = () => {
 
     function updateNavStyle(targetId) {
         anchorRefs.current.forEach(anchor => {
-            if (anchor.classList.contains('active')) {
-                anchor.classList.remove('active');
+            if (anchor.classList.contains('active') || anchor.href.includes(targetId)) {
+                anchor.classList.toggle('active');
+                anchor.parentElement.classList.toggle('bounce');
+            }
+            if (anchor.classList.contains('active')){
                 anchor.ariaSelected = false;
-                anchor.parentElement.classList.remove('bounce');
             }
             if (anchor.href.includes(targetId)) {
-                anchor.classList.add('active');
                 anchor.ariaSelected = true;
-                anchor.parentElement.classList.add('bounce');
             }
         });
     }
+
+    useEffect(() => { // TEST:
+        console.log('mount: Navigation');
+    }, []);
 
     useEffect(() => {
         // console.log('cache section nodes as refs');
@@ -53,6 +57,7 @@ const Navigation = () => {
     useEffect(() => {
         function handleIntersection(e) {
             e.forEach(event => {
+                console.log(event);
                 if (event.isIntersecting) {
                     updateNavStyle(event.target.id);
                 }
