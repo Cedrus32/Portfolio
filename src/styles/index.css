@@ -52,6 +52,10 @@ body  {
     font-size: var(--small);
 }
 
+.project-links a {
+    text-align: center;
+}
+
 .details p {
     font-size: var(--xsmall);
 }
@@ -200,6 +204,38 @@ figcaption {
 .contact-links img,
 .contact-links span {
     margin: 0 auto;
+}
+
+@media screen and (min-width: 850px) {
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 'title title'
+                             'image details'
+                             'links .';
+        gap: var(--half-gap);
+    }
+
+    .project-title {
+        grid-area: title;
+    }
+
+    article img {
+        grid-area: image;
+    }
+
+    .details {
+        grid-area: details;
+    }
+
+    .project-links {
+        grid-area: links;
+    }
+
+    .project-links a {
+        width: 100%;
+    }
 }
 
 /* spacing */
