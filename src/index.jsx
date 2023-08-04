@@ -5,8 +5,6 @@ import App from './global/App';
 import './styles/reset.css';
 import './styles/index.css';
 
-// TODO: implement 404 error -- may need custom routing from nav (where hashes are checked and scrolled into view)
-
 const routes = createBrowserRouter([
     {
         path: '/',

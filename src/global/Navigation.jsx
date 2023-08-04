@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 
-const links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+const linkNames = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+const linkHrefs = linkNames.map(link => link.toLowerCase());
 const options = {
     root: null,
     rootMargin: "-50% 0% -50% 0%",
@@ -13,7 +14,7 @@ const Navigation = () => {
 
     function showSection() {
         let hash = window.location.hash;
-        if (hash === '') {
+        if (!linkHrefs.includes(window.location.hash.split('#')[1])) {
             hash = '#home';
         }
         const target = sectionRefs.current.filter(section => section.id === hash.split('#')[1])[0];
@@ -72,9 +73,9 @@ const Navigation = () => {
     return (
         <nav>
             <ul>
-            {links.map(link => (
-                <li key={link}>
-                    <a href={'#' + link.toLowerCase()} aria-selected={false} aria-current='' onClick={showSection}>{link}</a>
+            {linkNames.map((name, i) => (
+                <li key={name}>
+                    <a href={'#' + linkHrefs[i]} aria-selected={false} aria-current='' onClick={showSection}>{name}</a>
                 </li>
             ))}
             </ul>
