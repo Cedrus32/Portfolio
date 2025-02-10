@@ -1,4 +1,4 @@
-const links = ["home", "about", "projects", "contact"];
+import links from "../lib/sections.json";
 
 function Menu() {
 	return (

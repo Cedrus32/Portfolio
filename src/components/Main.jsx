@@ -1,10 +1,10 @@
-const links = ["home", "about", "projects", "contact"];
+import sections from "../lib/sections.json";
 
 function Sample() {
 	return (
 		<>
-			{links.map((link) => {
-				return <section key={`${link}-section`} id={link}>{`${link} section`}</section>;
+			{sections.map((section) => {
+				return <section key={`${section}-section`} id={section}>{`${section} section`}</section>;
 			})}
 		</>
 	);
