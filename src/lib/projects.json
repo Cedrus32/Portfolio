@@ -1,0 +1,126 @@
+[
+	{
+		"id": 1,
+		"title": "Shopping Cart",
+		"details": [
+			{
+				"title": "Description",
+				"content": "Ecommerce frontend built with React, React Router, and Fakestore API. Bootstrapped from a custom React environment using Webpack."
+			},
+			{
+				"title": "Technologies",
+				"content": "React, React Router, REST API, Webpack"
+			},
+			{
+				"title": "Year",
+				"content": "2023"
+			}
+		],
+		"media": {
+			"links": [
+				{
+					"content": "Live",
+					"url": "https://Cedrus32.github.io/Shopping-Cart"
+				},
+				{
+					"content": "Repo",
+					"url": "https://github.com/Cedrus32/Shopping-Cart"
+				}
+			],
+			"img": "../assets/projects/shopping_cart.png"
+		}
+	},
+	{
+		"id": 2,
+		"title": "Knight's Travail",
+		"details": [
+			{
+				"title": "Description",
+				"content": "Simple webpage showcasing under-the-hood concepts linked lists, tree navigation, and tree sorting. Built with React. Bootstrapped from a custom React environment using Webpack."
+			},
+			{
+				"title": "Technologies",
+				"content": "linked lists, tree navigation/sorting, Javascript, Webpack"
+			},
+			{
+				"title": "Year",
+				"content": "2023"
+			}
+		],
+		"media": {
+			"links": [
+				{
+					"content": "Live",
+					"url": "https://Cedrus32.github.io/Knights-Travails"
+				},
+				{
+					"content": "Repo",
+					"url": "https://github.com/Cedrus32/Knights-Travails"
+				}
+			],
+			"img": "../assets/projects/knights_travails.png"
+		}
+	},
+	{
+		"id": 3,
+		"title": "Weather App",
+		"details": [
+			{
+				"title": "Description",
+				"content": "Basic weather search app."
+			},
+			{
+				"title": "Technologies",
+				"content": "Webpack, Fetch API"
+			},
+			{
+				"title": "Year",
+				"content": "2023"
+			}
+		],
+		"media": {
+			"links": [
+				{
+					"content": "Live",
+					"url": "https://cedrus32.github.io/Weather-App/"
+				},
+				{
+					"content": "Repo",
+					"url": "https://github.com/Cedrus32/Weather-App"
+				}
+			],
+			"img": "../assets/projects/weather_app.png"
+		}
+	},
+	{
+		"id": 4,
+		"title": "Battleship",
+		"details": [
+			{
+				"title": "Description",
+				"content": "Battleship game with a clean design and UI."
+			},
+			{
+				"title": "Technologies",
+				"content": "Webpack, Javascript"
+			},
+			{
+				"title": "Year",
+				"content": "2023"
+			}
+		],
+		"media": {
+			"links": [
+				{
+					"content": "Live",
+					"url": "https://cedrus32.github.io/Battleship/"
+				},
+				{
+					"content": "Repo",
+					"url": "https://github.com/Cedrus32/Battleship"
+				}
+			],
+			"img": "../assets/projects/battleship.png"
+		}
+	}
+]
