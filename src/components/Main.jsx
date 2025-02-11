@@ -1,5 +1,6 @@
 import Home from "./Home.jsx";
 import About from "./About.jsx";
+import Contact from "./Contact.jsx";
 import sections from "../lib/sections.json";
 
 function Sample() {
@@ -13,6 +14,9 @@ function Sample() {
 						break;
 					case "about":
 						content = About();
+						break;
+					case "contact":
+						content = Contact();
 						break;
 					default:
 						content = `${section} section`;
