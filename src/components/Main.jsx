@@ -5,7 +5,7 @@ import sections from "../lib/sections.json";
 
 function Sample() {
 	return (
-		<>
+		<main>
 			{sections.map((section) => {
 				let content;
 				switch (section) {
@@ -27,7 +27,7 @@ function Sample() {
 					</section>
 				);
 			})}
-		</>
+		</main>
 	);
 }
 
