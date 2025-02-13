@@ -27,7 +27,7 @@
 					"url": "https://github.com/Cedrus32/Shopping-Cart"
 				}
 			],
-			"img": "../assets/projects/shopping_cart.png"
+			"img": "src/assets/projects/shopping_cart.png"
 		}
 	},
 	{
@@ -58,7 +58,7 @@
 					"url": "https://github.com/Cedrus32/Knights-Travails"
 				}
 			],
-			"img": "../assets/projects/knights_travails.png"
+			"img": "src/assets/projects/knights_travails.png"
 		}
 	},
 	{
@@ -89,7 +89,7 @@
 					"url": "https://github.com/Cedrus32/Weather-App"
 				}
 			],
-			"img": "../assets/projects/weather_app.png"
+			"img": "src/assets/projects/weather_app.png"
 		}
 	},
 	{
@@ -120,7 +120,7 @@
 					"url": "https://github.com/Cedrus32/Battleship"
 				}
 			],
-			"img": "../assets/projects/battleship.png"
+			"img": "src/assets/projects/battleship.png"
 		}
 	}
 ]
